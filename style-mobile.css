@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.container__main {
+    font-family: 'Josefin Sans';
+}
+
+.section__one {
+    padding: 30px 25px;
+}
+
+.logo {
+    width: 110px;
+}
+
+.section__three {
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+}
+
+.color {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.paragraph {
+    padding: 30px 0 50px 0;
+    color: hsl(0, 36%, 70%);
+    line-height: 25px;
+    font-size: .9rem;
+}
+
+.form {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.input__text {
+    width: 100%;
+    border: 1px solid hsl(0, 36%, 70%);
+    background: none;
+    padding: 15px 0 15px 20px;
+    border-radius: 40px;
+}
+
+.input__text::placeholder {
+    color: hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans';
+}
+
+.input__button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 25%;
+    border-radius: 40px;
+    border: none;
+    background: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    color: hsl(0, 0%, 100%);
+    font-size: 1.7rem;
+    font-weight: 300;
+    font-family: 'Josefin Sans';
+    transition: .2s;
+}
+
+.input__button:hover {
+    background: linear-gradient(90deg, rgba(252,232,232,1) 0%, rgba(255,213,215,1) 48%, rgba(255,215,215,1) 100%);
+    box-shadow: 1px 116px 108px -25px rgba(255,215,215,1);
+    cursor: pointer;
+}
+
+.icono__oculto {
+    width: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30%;
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+.error__oculto {
+    text-align: start;
+    font-size: .7rem;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: hsl(0, 93%, 68%);
+    display: none;
+}
