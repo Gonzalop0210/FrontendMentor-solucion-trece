@@ -23,9 +23,9 @@
             <h1 class="title"><span class="color">we're</span> coming soon</h1>
             <p class="paragraph">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals</p>
             <form action="" class="form">
-                <input type="email" placeholder="Email Address" class="input__text">
+                <input type="text" id="email" placeholder="Email Address" class="input__text">
                 <img src="images/icon-error.svg" alt="icono error" class="icono__oculto">
-                <input type="submit" value=">" class="input__button">
+                <input type="button" value=">" class="input__button" onclick="validar(form.email.value)">
             </form>
             <p class="error__oculto">Please provide a valid email*</p>
         </section>

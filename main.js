@@ -1,16 +1,17 @@
-const inputText = document.querySelector('.input__text');
+const inputEmail = document.getElementById('email').value;
 const formulario = document.querySelector('.form');
+const boton = document.querySelector('.input__button');
 const textError = document.querySelector('.error__oculto');
 const iconoError = document.querySelector('.icono__oculto');
-const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-const emailValido = !regex.test(inputText.value);
 
-formulario.addEventListener('submit', error => {
-    
-    if(emailValido) {
-        error.preventDefault();
-        console.log('error');
+/* boton.addEventListener('click', validar); */
+function validar(correo) {
+    var expReg = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+    var valido = expReg.test(correo);
+    if(valido == true) {
+        alert('Correo Válido');
     } else {
-        console.log('enviado');
+        iconoError.classList.add('mostrar');
+        textError.classList.add('mostrar');
     }
-});
+}
