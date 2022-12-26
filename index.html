@@ -10,14 +10,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style-mobile.css">
+    <link rel="stylesheet" href="style-desktop.css">
 </head>
 <body>
     <main class="container__main">
         <section class="container__section section__one">
             <img src="images/logo.svg" alt="logo" class="logo">
         </section>
-        <section class="container__section">
-            <img src="images/hero-mobile.jpg" alt="Imagen Hero" class="img__principal">
+        <section class="container__section section__two">
+            <img src="images/hero-mobile.jpg" alt="Imagen Hero" class="img__principal img__mobile">
+            <img src="images/hero-desktop.jpg" alt="Desktop" class="img__principal img__desktop">
         </section>
         <section class="container__section section__three">
             <h1 class="title"><span class="color">we're</span> coming soon</h1>
@@ -27,7 +29,7 @@
                 <img src="images/icon-error.svg" alt="icono error" class="icono__oculto">
                 <input type="button" value=">" class="input__button" onclick="validar(form.email.value)">
             </form>
-            <p class="error__oculto">Please provide a valid email*</p>
+            <p class="error__oculto para">Please provide a valid email*</p>
         </section>
     </main>
     <script src="main.js"></script>

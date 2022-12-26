@@ -6,10 +6,19 @@
 
 body {
     background: linear-gradient(90deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.img__desktop {
+    display: none;
 }
 
 .container__main {
     font-family: 'Josefin Sans';
+    max-width: 375px;
 }
 
 .section__one {
@@ -103,5 +112,8 @@ body {
     margin-left: 20px;
     margin-top: 5px;
     color: hsl(0, 93%, 68%);
+}
+
+.para {
     display: none;
 }

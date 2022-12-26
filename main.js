@@ -12,6 +12,6 @@ function validar(correo) {
         alert('Correo Válido');
     } else {
         iconoError.classList.add('mostrar');
-        textError.classList.add('mostrar');
+        textError.classList.remove('para');
     }
 }
